@@ -25,6 +25,11 @@ document.addEventListener("keyup", function(e){
         nouvCarre.style.backgroundColor = "rgb(" + couleurs[0] + ", " + couleurs[1] + ", " + couleurs[2] + ")";
         contenu.appendChild(nouvCarre);
         nombreCasesCrées++;
+        nouvCarre.addEventListener("click", function(){
+            if(nombreCasesCrées === 225){
+                nouvCarre.style.backgroundColor = "rgb(0, 0, 0)";
+            }
+        })
     }
     else if(e.code === "ArrowUp" && nombreCasesCrées > 0){
         contenu.removeChild(contenu.lastElementChild);
