@@ -15,4 +15,8 @@ document.addEventListener("keyup", function(e){
         contenu.appendChild(nouvCarre);
         nombreCasesCrées++;
     }
+    else if(e.code === "ArrowUp" && nombreCasesCrées > 0){
+        contenu.removeChild(contenu.lastElementChild);
+        nombreCasesCrées--;
+    }
 })
