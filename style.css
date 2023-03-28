@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.contenu{
+    margin: auto;
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carre{
+    background-color: rgb(4, 141, 4);
+    height: 60px;
+    width: 60px;
+}
