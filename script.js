@@ -9,7 +9,10 @@ const carre = document.createElement("div");
 carre.classList.add("carre");
 
 /* Création de cases */
-for(i = 0; i < 225; i++){
-    let nouvCarre = carre.cloneNode();
-    contenu.appendChild(nouvCarre);
-}
+document.addEventListener("keyup", function(e){
+    if(e.code === "ArrowDown" && nombreCasesCrées < 225){
+        let nouvCarre = carre.cloneNode();
+        contenu.appendChild(nouvCarre);
+        nombreCasesCrées++;
+    }
+})
